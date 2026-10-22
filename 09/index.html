@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="th"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>บทที่ 9 · Prompt สำหรับหนังสือ</title>
+<style>
+*{box-sizing:border-box}body{margin:0;background:#faf3e3;color:#2b2b2b;font-family:"Sarabun","Noto Sans Thai",system-ui,sans-serif;line-height:1.7}
+main{max-width:760px;margin:auto;padding:24px 16px 48px}h1{font-size:1.6rem;margin:0 0 .3em}
+.intro{margin:0 0 1.4em}.card{background:#fff;border:1px solid #e6dcc6;border-radius:12px;padding:16px;margin:18px 0}
+h2{font-size:1.15rem;color:#1f6f78;margin:0 0 .5em}pre{white-space:pre-wrap;overflow-wrap:anywhere;background:#f6f6f4;border-radius:8px;padding:12px;font:inherit;margin:0 0 10px}
+button{background:#1f6f78;color:#fff;border:0;border-radius:8px;padding:10px 18px;font:inherit;cursor:pointer}
+button:focus-visible{outline:3px solid #f2a541;outline-offset:3px}footer{margin-top:32px;font-size:.9rem;color:#666}
+</style></head><body><main>
+<h1>บทที่ 9 · Prompt สำหรับหนังสือ</h1>
+<p class="intro">คัดลอก Prompt ทีละชุดตามขั้นตอนในหนังสือ แก้ข้อมูลใน [ ] ให้ตรงกับเรื่องของท่านก่อนส่ง</p>
+<section class="card"><h2>Prompt 1</h2><pre id="p1">ช่วยเป็นผู้ถามเพื่อให้ฉันค้นเรื่องของตัวเอง ไม่ใช่ผู้แต่งเรื่อง
+ผู้ฟัง: [หัวหน้าฝ่าย]
+เขาเชื่อว่า: [ระบบเดิมก็ดีอยู่แล้ว — ใบเบิกวัสดุแบบกระดาษ]
+แรงต้าน: [นึกภาพไม่ออก / เรื่องใหม่มาก]
+การกระทำที่ต้องการ: [ขอทดลองกับงานเดียว 1 เดือน ถ้าไม่ดีขึ้น เรากลับไปใช้กระดาษ]
+เวลา/โอกาส: [ประชุมทีมประจำเดือน 3 นาที ในตัวอย่างสมมติ ยังไม่ใช่การอนุญาตให้ทดลอง]
+เรื่องที่เลือกจาก T3: [A คืนสิ้นเดือนของหัวหน้า]
+สิ่งที่รู้จาก T2: [ค่ำแล้ว หัวหน้ารวมแฟ้มสีฟ้า 3 แฟ้ม มีเสียงเครื่องคิดเลข]
+สิ่งที่ยังไม่รู้: [ใช้เวลากี่ชั่วโมง และแบบออนไลน์จะช่วยงานนี้ได้จริงหรือไม่]
+ถามทีละข้อ ถามแบบเปิด ห้ามเติมรายละเอียดเอง ไม่ชี้นำอารมณ์ คำพูด หรือผลลัพธ์
+ตอนนี้ถามหนึ่งคำถามเกี่ยวกับสิ่งที่ฉันเห็นหรือได้ยิน แล้วรอคำตอบ
+ถ้าฉันจำไม่ได้ ให้เก็บว่าจำไม่ได้ ไม่คาดคั้นและไม่เสนอฉากให้เลือก
+อย่าแต่งประสบการณ์ของฉันหรือของ AI อย่าเดาเวลาที่ประหยัดได้</pre><button type="button" data-copy="p1">คัดลอก</button></section>
+<section class="card"><h2>Prompt 2</h2><pre id="p2">คำตอบจากข้อมูล T2 ของฉัน: [ในตัวอย่างสมมติ ฉันเห็นแฟ้มสีฟ้า 3 แฟ้มบนโต๊ะ ได้ยินเสียงเครื่องคิดเลข หัวหน้าพูดว่า ไปก่อนเลย เดี๋ยวพี่ปิดไฟเอง]
+สิ่งที่ไม่รู้: [กี่ทุ่ม ใช้เวลากี่ชั่วโมง และความคิดจริงของหัวหน้า]
+ถ้าข้อมูลนี้ไม่ตอบคำถามที่เพิ่งถาม ให้ระบุว่าข้อมูลไม่พอ อย่าเติมแทน
+หยุดถามก่อน แล้วสรุปเฉพาะข้อมูลที่ฉันให้เป็น 3 ช่อง: เห็นหรือได้ยินเอง / ยังไม่ทราบหรือจำไม่ได้ / ต้องตรวจหรือถามใคร
+ข้อความใดเป็นเพียงการเดามุมหัวหน้า ให้แยกเป็นข้อเดา ไม่ใส่อัญประกาศเป็นคำพูดจริง
+อย่าเปลี่ยนเรื่องที่เลือก A และอย่าเพิ่มผลประหยัด ผลทดลอง หรือการอนุญาตที่ยังไม่มี</pre><button type="button" data-copy="p2">คัดลอก</button></section>
+<footer>หน้านี้ไม่มีโฆษณาและไม่เก็บข้อมูลผู้ใช้</footer>
+</main><script>
+document.querySelectorAll('button[data-copy]').forEach(button=>button.addEventListener('click',async()=>{
+ const source=document.getElementById(button.dataset.copy);const value=source.textContent;
+ try{await navigator.clipboard.writeText(value)}catch(_){const selection=getSelection();const range=document.createRange();range.selectNodeContents(source);selection.removeAllRanges();selection.addRange(range);document.execCommand('copy');selection.removeAllRanges()}
+ button.textContent='คัดลอกแล้ว';setTimeout(()=>{button.textContent='คัดลอก'},2000)
+}));
+</script></body></html>

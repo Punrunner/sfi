@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="th"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>บทที่ 8 · Prompt สำหรับหนังสือ</title>
+<style>
+*{box-sizing:border-box}body{margin:0;background:#faf3e3;color:#2b2b2b;font-family:"Sarabun","Noto Sans Thai",system-ui,sans-serif;line-height:1.7}
+main{max-width:760px;margin:auto;padding:24px 16px 48px}h1{font-size:1.6rem;margin:0 0 .3em}
+.intro{margin:0 0 1.4em}.card{background:#fff;border:1px solid #e6dcc6;border-radius:12px;padding:16px;margin:18px 0}
+h2{font-size:1.15rem;color:#1f6f78;margin:0 0 .5em}pre{white-space:pre-wrap;overflow-wrap:anywhere;background:#f6f6f4;border-radius:8px;padding:12px;font:inherit;margin:0 0 10px}
+button{background:#1f6f78;color:#fff;border:0;border-radius:8px;padding:10px 18px;font:inherit;cursor:pointer}
+button:focus-visible{outline:3px solid #f2a541;outline-offset:3px}footer{margin-top:32px;font-size:.9rem;color:#666}
+</style></head><body><main>
+<h1>บทที่ 8 · Prompt สำหรับหนังสือ</h1>
+<p class="intro">คัดลอก Prompt ทีละชุดตามขั้นตอนในหนังสือ แก้ข้อมูลใน [ ] ให้ตรงกับเรื่องของท่านก่อนส่ง</p>
+<section class="card"><h2>Prompt 1</h2><pre id="p1">ช่วยตรวจการ์ด T1 เพื่อเตรียมเล่าเรื่องโน้มน้าว ยังไม่ต้องเขียนเรื่องเล่าหรือสคริปต์
+ผู้ฟัง: [ลูกทีม 6 คนในฝ่าย ทุกคนเขียนรายงานประจำสัปดาห์]
+เขาเชื่อว่า: [เดี๋ยว AI ก็มาแทนเรา / AI แต่งตัวเลขขึ้นมาเอง เชื่อไม่ได้]
+ที่มาของความเชื่อ: [คุยกับน้องในทีม 2 คนตอนกินข้าวเที่ยง ยังไม่ได้ถามครบทุกคน]
+อยากให้เชื่อว่า: [AI ร่างได้เร็ว แต่คนรู้งานต้องเป็นคนตรวจ ทีมยังสำคัญเหมือนเดิม]
+แรงต้าน: [ไม่ไว้ใจ / กลัวพลาด — ถ้ารายงานผิดเพราะ AI ใครรับผิดชอบ ?]
+การกระทำที่ต้องการ: [ให้ลูกทีมแต่ละคนลองให้ AI ช่วยร่างรายงานคนละ 1 ฉบับภายในวันศุกร์นี้]
+เวลา/โอกาส: [3 นาที ประชุมทีมเช้าวันจันทร์ ห้องประชุมเล็ก]
+ตอบสั้น ๆ เป็น 3 ส่วน:
+1. สิ่งที่รู้จากข้อมูล กับสิ่งที่ยังเป็นข้อเดา แยกกันให้ชัด
+2. ข้อค้านที่อาจมีเพิ่มไม่เกิน 3 ข้อ ระบุทุกข้อว่าเป็นเพียงสมมติฐาน พร้อมสิ่งที่ต้องรู้ก่อนตอบ
+3. คำถามเปิด 3 ข้อที่จะนำไปถามคนจริง โดยไม่ชี้นำให้เห็นด้วย
+อย่าแต่งคำพูด ผลสำรวจ หรือความรู้สึกของคนจริง อย่ารับรองเรื่องงานหรือความรับผิดชอบแทนองค์กร</pre><button type="button" data-copy="p1">คัดลอก</button></section>
+<section class="card"><h2>Prompt 2</h2><pre id="p2">ช่วยปรับการ์ด T1 จากข้อมูลที่ตรวจแล้วต่อไปนี้
+ข้อมูลที่ยืนยันได้: [ในตัวอย่างสมมติ พี่ต้อมคุยกับน้อง 2 คนตามที่ให้ไว้ ยังไม่มีคำตอบเพิ่มจากอีก 4 คน]
+ข้อมูลที่ยังไม่ทราบ: [ความเห็นของอีก 4 คน และข้อตกลงว่าใครตรวจรายงานและรับผิดชอบก่อนส่ง]
+การกระทำหลักคงเดิม: [ให้ลูกทีมแต่ละคนลองให้ AI ช่วยร่างรายงานคนละ 1 ฉบับภายในวันศุกร์นี้]
+ใช้ชื่อช่องตรงนี้: ผู้ฟัง / เขาเชื่อว่า / อยากให้เชื่อว่า / แรงต้าน / การกระทำที่ต้องการ / เวลา/โอกาส
+รักษาค่าที่ทราบจากการ์ดเดิม ไม่เปลี่ยนเป้าหมายและไม่เพิ่มคำขอ
+ถ้าไม่รู้ให้เขียนว่ายังไม่ทราบ อย่าเติมคำตอบเอง
+ท้ายการ์ดเขียน 2 รายการ: ต้องถามใครเพิ่ม / ต้องตกลงอะไรให้ชัดก่อนชวนทดลอง
+แยกข้อมูลที่ผู้ใช้ให้จากข้อเสนอของ AI อย่ารับรองว่าจะไม่มีใครเสียงานหรือว่าจะไม่มีความผิดพลาด</pre><button type="button" data-copy="p2">คัดลอก</button></section>
+<footer>หน้านี้ไม่มีโฆษณาและไม่เก็บข้อมูลผู้ใช้</footer>
+</main><script>
+document.querySelectorAll('button[data-copy]').forEach(button=>button.addEventListener('click',async()=>{
+ const source=document.getElementById(button.dataset.copy);const value=source.textContent;
+ try{await navigator.clipboard.writeText(value)}catch(_){const selection=getSelection();const range=document.createRange();range.selectNodeContents(source);selection.removeAllRanges();selection.addRange(range);document.execCommand('copy');selection.removeAllRanges()}
+ button.textContent='คัดลอกแล้ว';setTimeout(()=>{button.textContent='คัดลอก'},2000)
+}));
+</script></body></html>

@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="th">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>บทที่ 11 · Prompt สำหรับคลังคำ</title>
+  <style>
+    * { box-sizing: border-box; }
+    body { margin: 0; background: #faf3e3; color: #2b2b2b; font-family: "Sarabun", "Noto Sans Thai", system-ui, sans-serif; line-height: 1.7; }
+    main { max-width: 760px; margin: auto; padding: 24px 16px 48px; }
+    h1 { font-size: 1.6rem; margin: 0 0 .3em; }
+    .intro { margin: 0 0 1.4em; }
+    .card { background: white; border: 1px solid #e6dcc6; border-radius: 12px; padding: 16px; margin: 18px 0; }
+    h2 { font-size: 1.15rem; color: #1f6f78; margin: 0 0 .5em; }
+    pre { white-space: pre-wrap; overflow-wrap: anywhere; background: #f6f6f4; border-radius: 8px; padding: 12px; font: inherit; margin: 0 0 10px; }
+    button { background: #1f6f78; color: white; border: 0; border-radius: 8px; padding: 10px 18px; font: inherit; cursor: pointer; }
+    button:focus-visible { outline: 3px solid #f2a541; outline-offset: 3px; }
+    footer { margin-top: 32px; font-size: .9rem; color: #666; }
+  </style>
+</head>
+<body>
+<main>
+  <h1>บทที่ 11 · Prompt สำหรับคลังคำ</h1>
+  <p class="intro">คัดลอก Prompt ทีละชุดไปใช้ตามขั้นตอนในหนังสือ แก้ข้อมูลใน [ ] ให้ตรงกับเรื่องและผู้ฟังของท่านก่อนส่ง</p>
+  <section class="card"><h2>Prompt 1</h2><pre id="p1">คุณเป็นโค้ชด้านการเล่าเรื่องเพื่อโน้มน้าวใจ
+จากข้อมูลของฉันด้านล่าง ช่วยเขียน
+1) ประโยคเปิด 5 แบบ แต่ละแบบไม่เกิน 2 ประโยค ใช้วิธีต่างกัน: คำถาม · ฉากสั้น ๆ · คำพูดของคนในเรื่อง · ประโยคที่ค้านความเชื่อของผู้ฟัง · สิ่งที่ผู้ฟังเจอทุกวัน
+2) ประโยคปิด 3 แบบ ทุกแบบจบด้วย "การกระทำที่ต้องการ" ด้านล่างแบบคำต่อคำ
+ใต้ประโยคเปิดแต่ละแบบ บอกสั้น ๆ ว่าทำให้ผู้ฟังอยากรู้อะไร
+ใช้เฉพาะข้อเท็จจริงที่ฉันให้ ห้ามแต่งตัวเลขหรือเหตุการณ์เพิ่ม ถ้าข้อมูลไม่พอให้เขียนว่า "ต้องถามเพิ่ม"
+
+ข้อมูลของฉัน
+ผู้ฟัง: [ลูกทีม 6 คนในฝ่าย ทุกคนเขียนรายงานประจำสัปดาห์]
+เขาเชื่อว่า: ["เดี๋ยว AI ก็มาแทนเรา" และ "AI แต่งตัวเลขขึ้นมาเอง เชื่อไม่ได้"]
+แรงต้าน: [ไม่ไว้ใจ / กลัวพลาด "ถ้ารายงานผิดเพราะ AI ใครรับผิดชอบ ?"]
+การกระทำที่ต้องการ: [ให้ลูกทีมแต่ละคนลองให้ AI ช่วยร่างรายงานคนละ 1 ฉบับ ภายในวันศุกร์นี้]
+เวลา/โอกาส: [3 นาที ประชุมทีมเช้าวันจันทร์]
+เส้นทางเรื่อง (จาก T4): [Failure → Lesson · Hook: ใครเคยเห็น AI แต่งตัวเลขขึ้นมาเองบ้าง ? · ครั้งที่พลาด: ครั้งแรกที่ลองใช้ รายงานผิดเพียบ · บทเรียน: AI ร่างได้เร็ว แต่คนรู้งานต้องเป็นคนตรวจ · วันนี้ทำต่างไป: รายงานเร็วขึ้น และยังพึ่งความรู้ของทีมเหมือนเดิม]</pre><button type="button" data-copy="p1">คัดลอก</button></section>
+  <section class="card"><h2>Prompt 2</h2><pre id="p2">ช่วยคิดการเปรียบเทียบ (Analogy) 5 แบบ สำหรับใจความสำคัญนี้: [AI ร่างให้เร็ว แต่คนที่รู้งานคือพวกเรา]
+ทุกแบบต้องมาจากโลกของผู้ฟัง: [ลูกทีมฝ่ายที่เขียนรายงานประจำสัปดาห์ ทำงานในออฟฟิศ]
+ห้ามใช้สำนวนที่คนใช้กันบ่อยจนชิน
+ใต้แต่ละแบบ บอกผ่าน/ไม่ผ่าน 4 ข้อ: ใช้ภาพเดียว · ใหม่ ไม่ซ้ำซาก · มาจากโลกของผู้ฟัง · ใช้ได้ในช่วงต้นของเรื่อง (มาก่อน)
+แล้วบอกว่าแบบไหนอาจทำให้ผู้ฟังเข้าใจผิด หรือรู้สึกว่างานของเขาถูกดูถูก</pre><button type="button" data-copy="p2">คัดลอก</button></section>
+  <section class="card"><h2>Prompt 3</h2><pre id="p3">แรงต้านของผู้ฟังคือ: [ไม่ไว้ใจ / กลัวพลาด "ถ้ารายงานผิดเพราะ AI ใครรับผิดชอบ ?"]
+ช่วยค้นเว็บหาแหล่งข้อมูลที่น่าเชื่อถือและเกี่ยวข้องโดยตรงกับแรงต้านนี้ 3 ชิ้น: [คำถามหรือข้อกังวลเฉพาะของผู้ฟัง]
+ถ้าเป็นเรื่องนโยบายขององค์กร ให้บอกว่าควรตรวจเอกสารหรือติดต่อหน่วยงานใดในองค์กร แทนการเดาคำตอบ
+แต่ละชิ้นบอก: ชื่อเรื่องเต็ม · ผู้เขียน · ปี · วารสารหรือผู้เผยแพร่ · ลิงก์หรือ DOI · สิ่งที่พบ 1 ประโยค
+ใส่เฉพาะชิ้นที่มีลิงก์ให้เปิดดูได้ ถ้าไม่แน่ใจว่ามีอยู่จริง ให้บอกตรง ๆ ว่า "ไม่แน่ใจ"
+ถ้ามีงานภาษาไทยที่เกี่ยวข้อง ให้ใส่ด้วย หากหาแหล่งที่เกี่ยวข้องไม่ได้ ให้บอกว่า "ยังไม่มี/ต้องถาม" ห้ามเลือกแหล่งแรกเพียงเพราะหาเจอ</pre><button type="button" data-copy="p3">คัดลอก</button></section>
+  <footer>หน้านี้ไม่มีโฆษณาและไม่เก็บข้อมูลผู้ใช้</footer>
+</main>
+<script>
+  document.querySelectorAll('button[data-copy]').forEach(button => {
+    button.addEventListener('click', async () => {
+      const source = document.getElementById(button.dataset.copy);
+      const value = source.textContent;
+      try { await navigator.clipboard.writeText(value); }
+      catch (_) {
+        const selection = getSelection();
+        const range = document.createRange();
+        range.selectNodeContents(source);
+        selection.removeAllRanges(); selection.addRange(range);
+        document.execCommand('copy'); selection.removeAllRanges();
+      }
+      button.textContent = 'คัดลอกแล้ว';
+      setTimeout(() => { button.textContent = 'คัดลอก'; }, 2000);
+    });
+  });
+</script>
+</body>
+</html>
